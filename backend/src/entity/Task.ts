@@ -27,9 +27,9 @@ export class Task {
     @Column({ type: "datetime", nullable: true })
     dueDate: Date | null;
 
-    @CreateDateColumn()
+    @CreateDateColumn({ type: "datetime" })
     createdAt: Date;
 
-    @UpdateDateColumn()
+    @UpdateDateColumn({ type: "datetime" })
     updatedAt: Date;
 } 
