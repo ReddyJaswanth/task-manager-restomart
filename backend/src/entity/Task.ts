@@ -24,12 +24,12 @@ export class Task {
     })
     status: TaskStatus;
 
-    @Column({ type: "datetime", nullable: true })
+    @Column({ nullable: true })
     dueDate: Date | null;
 
-    @CreateDateColumn({ type: "datetime" })
+    @CreateDateColumn()
     createdAt: Date;
 
-    @UpdateDateColumn({ type: "datetime" })
+    @UpdateDateColumn()
     updatedAt: Date;
 } 
