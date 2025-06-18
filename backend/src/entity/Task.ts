@@ -24,7 +24,7 @@ export class Task {
     })
     status: TaskStatus;
 
-    @Column({ nullable: true })
+    @Column({ type: "timestamp", nullable: true })
     dueDate: Date | null;
 
     @CreateDateColumn()
