@@ -3,7 +3,7 @@ const nextConfig = {
   experimental: {
     appDir: true,
   },
-  output: 'export',
+  // output: 'export',
   trailingSlash: true,
   images: {
     unoptimized: true
